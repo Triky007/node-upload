@@ -9,7 +9,7 @@ const express = require('express');
 var app = express();
 var upload = require('express-fileupload');
 const http = require('http');
-http.Server(app).listen(process.env.PORT || 3001); // make server listen on port 3000
+http.Server(app).listen(process.env.PORT || 3001); // make server listen on port 3001
 
 app.use(upload()); // configure middleware
 
