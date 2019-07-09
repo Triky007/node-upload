@@ -9,11 +9,11 @@ const express = require('express');
 var app = express();
 var upload = require('express-fileupload');
 const http = require('http');
-http.Server(app).listen(process.env.PORT || 3000); // make server listen on port 3000
+http.Server(app).listen(process.env.PORT || 3001); // make server listen on port 3000
 
 app.use(upload()); // configure middleware
 
-console.log("Server Started at port 3000");
+console.log("Server Started at port 3001");
 
 app.get('/',function(req,res){
   res.sendFile(__dirname+'/index.html');
